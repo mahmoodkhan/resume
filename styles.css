@@ -1,0 +1,115 @@
+body {
+  background-color: gray;
+  font-family: "Verdana";
+  margin: 0;
+  color: #757575;
+  /* color: #db3853; */
+}
+
+.teal {
+  color: #009688;
+}
+
+.page-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  /* grid-auto-rows: minmax(100px, auto); */
+  /* grid-template-rows: 350px auto auto; */
+  gap: 0.5rem;
+  padding: 2rem;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer"
+}
+
+.grid-item {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.experience-list {
+  padding: 0 1rem;
+  margin: 0;
+}
+
+.padding-y-1 {
+  padding: 0.5rem 0;
+}
+
+.padding-top-2 {
+  padding: 2rem 0 0 0;
+}
+
+.bottom-margin-0 {
+  margin-bottom: 0;
+}
+
+.margin-y-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+}
+
+.content {
+  grid-area: content;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 1rem;
+
+  .logo img {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+  }
+
+  .about-me {
+    padding-left: 1rem;
+  }
+
+  h1 {
+    margin: 0;
+    padding-left: 1rem;
+  }
+
+  h4 {
+    margin-top: 2px;
+    padding-left: 1rem;
+    /* color: grey */
+    /* color: #db3853; */
+  }
+}
+
+.header {
+  grid-area: header;
+
+}
+
+.skill-outer-wrapper {
+  width: 100%;
+  background-color: silver;
+  border-radius: 5px;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.skill-inner-wrapper {
+  background-color: teal;
+  color: silver;
+  text-align: left;
+  border-radius: 5px;
+  padding-left: 0.5rem;
+}
