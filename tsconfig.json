@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es5", // Specifies the target JavaScript version. You can adjust this based on your browser/environment support requirements.
+    "module": "es6", // Specifies the module system. Set to "esnext" for modern applications, allowing Babel to handle module transformation.
+    "allowJs": true, // Allows JavaScript files to be part of the project.
+    "noEmit": true, // Crucial for Babel integration: tells TypeScript to only perform type checking and NOT emit any JavaScript files, as Babel handles the transpilation.
+    "isolatedModules": true, //  Ensures that each file can be transpiled independently by Babel without needing knowledge of other files.
+    /* Strict Type-Checking Options */
+    "strict": true, // Enables all strict type-checking options, improving code quality.
+    "esModuleInterop": true, // Enables interoperability between CommonJS and ES Modules.
+    "skipLibCheck": true, // Skips type checking of declaration files (.d.ts). Useful for speeding up type checking.
+    "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file.
+    /* Module Resolution Options */
+    "moduleResolution": "node", // Tells TypeScript how to resolve modules, similar to Node.js.
+    "baseUrl": "./src", // Specifies the base directory for resolving non-relative module imports.
+    "paths": {
+      // Allows defining path aliases for easier module imports. Example:
+      "@components/*": [
+        "components/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ]
+    },
+    /* Source Map Options */
+    "sourceMap": true, // Generates source maps for debugging, allowing you to see the original TypeScript code in your browser's developer tools.
+    /* Experimental Options */
+    "experimentalDecorators": true, // Enables experimental support for decorators.
+    "emitDecoratorMetadata": true // Enables experimental support for emitting type metadata for decorators.
+  },
+  "include": [
+    "src/**/*",
+    "types/**/*.d.ts"
+  ], // Specifies the files to include for type checking.
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist"
+  ] // Specifies the files to exclude from type checking.
+}

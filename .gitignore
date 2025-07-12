@@ -1,0 +1,29 @@
+# Node.js dependencies
+node_modules/
+
+# TypeScript compiled output
+# This assumes your compiled JavaScript files are output to a 'dist' or 'build' folder.
+# Adjust 'dist/' if your output directory is named differently (e.g., 'build/').
+dist/
+build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.*.local
+
+# IDE-specific files (e.g., VS Code)
+.vscode/
+.history/
+
+# Operating System specific files
+.DS_Store
+Thumbs.db
+
+# Optional: TypeScript declaration maps
+# If you don't want to commit source maps for your compiled JavaScript
+*.js.map
