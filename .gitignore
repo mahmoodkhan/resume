@@ -27,3 +27,5 @@ Thumbs.db
 # Optional: TypeScript declaration maps
 # If you don't want to commit source maps for your compiled JavaScript
 *.js.map
+
+terraform/
