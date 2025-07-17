@@ -1,6 +1,7 @@
 // import './styles/main.scss';
 import "./images.d.ts";
 import "./styles/styles.css";
+import 'font-awesome/css/font-awesome.min.css';
 import me from "./assets/mk.jpeg";
 
 type Skill = {
